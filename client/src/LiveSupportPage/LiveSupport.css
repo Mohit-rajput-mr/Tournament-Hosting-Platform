@@ -1,0 +1,152 @@
+/* General Container Styling */
+.live-chat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 20px;
+    margin-top: -4%;
+
+    
+}
+
+h2 {
+    color: #ffdd57;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Chat Box Styling */
+.chat-box {
+    width: 100%;
+    max-width: 600px;
+    height: 60vh;
+    border-radius: 10px;
+    background-color: #333;
+    padding: 15px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+/* Message Bubble Styling */
+.user-message .message-bubble {
+    background-color: #ffdd57;
+    color: #1a1a1a;
+    align-self: flex-end;
+}
+
+.admin-message .message-bubble {
+    background-color: #4a4a4a;
+    color: #fff;
+    align-self: flex-start;
+}
+
+.message-bubble {
+    padding: 10px 15px;
+    border-radius: 12px;
+    max-width: 80%;
+    margin: 5px 0;
+    font-size: 0.9rem;
+    transition: transform 0.2s;
+}
+
+.timestamp {
+    font-size: 0.7rem;
+    margin-top: 5px;
+    color: #999;
+    text-align: right;
+    display: block;
+}
+
+.typing-indicator {
+    font-size: 0.85rem;
+    color: #ffdd57;
+    font-style: italic;
+    margin: 5px 0;
+    animation: fadeInOut 1s infinite;
+}
+
+/* Keyframe Animation for Typing Indicator */
+@keyframes fadeInOut {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 1; }
+}
+
+/* Input and Send Button */
+.chat-input {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+    background-color: #4a4a4a;
+    color: #fff;
+}
+
+.chat-input input::placeholder {
+    color: #ccc;
+}
+
+.chat-input button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ffdd57;
+    color: #1a1a1a;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.chat-input button:hover {
+    background-color: #ffc107;
+}
+
+/* Responsive Styling */
+@media (max-width: 600px) {
+    .live-chat-container {
+        padding: 10px;
+    }
+    
+    .chat-box {
+        height: 50vh;
+    }
+
+    .chat-input input {
+        font-size: 0.9rem;
+        padding: 8px 10px;
+    }
+
+    .chat-input button {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+}
+
+/* API Notification Styling */
+.api-notification {
+    font-size: 0.8rem;
+    color: #ccc;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    opacity: 0.9;
+}

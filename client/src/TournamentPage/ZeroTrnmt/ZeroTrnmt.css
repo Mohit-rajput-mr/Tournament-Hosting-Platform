@@ -1,0 +1,38 @@
+.zerot-container {
+    color: white;
+    display: flex;
+    position: absolute; 
+    top: 17.5%;
+    left: 300px; /* Left side ki specific length */
+    right: 0px; /* Right side ki specific length */
+    justify-content: center; 
+    align-items: center; 
+    background: #000000bf;
+    width: calc(100vw - 360px); /* Total space ka calculation: 300px left + 145px right */
+    height: 77vh; 
+    backdrop-filter: blur(10px);
+    border: 1px solid rgb(44, 44, 44);
+    border-radius: 10px;
+    z-index: -1;
+}
+
+
+@media (max-width: 768px) {
+    .zerot-container {
+        left: 0; 
+        right: 0;
+        width: 100vw; 
+    }
+}
+
+.zero-message h1 {
+    font-size: x-large;
+} 
+
+.un-img {
+    position: absolute;
+    z-index: -10;
+    opacity: 30%;
+    width: 50%;
+    padding: 5%;
+}
